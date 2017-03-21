@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'editor/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'editor/bootstrap.css' %}">
+
+    <!-- =------------------------------ ADDED  ---------------------- -->
+
+
+
+
+      <link href='{% static 'editor/css/style.css' %}' rel='stylesheet' type='text/css' />
+
+
+    <!-- =------------------------------ ADDED  ---------------------- -->
+
+
+<script src="{% static 'editor/jquery.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+                <style type="text/css">
+
+                  .headings{
+                  font-family: Signika ;
+                  color: #00C2B5;
+                  font-size: 35px;
+                  font-weight: 300;
+
+                 }
+
+
+                  .nav-pills li a {
+                  font-family: Roboto;
+                  color: #494949;
+                  font-size: 14.5px;
+                  font-weight: 300;
+                  transform: scale(0.998,1.037);
+                   -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                  }
+
+
+
+                  .nav-pills > li.active > a,
+                  .nav-pills > li.active > a:hover,
+                  .nav-pills > li.active > a:focus {
+                    color:white;
+                    background-color:#4866B0;
+                  }
+                  .nav-tabs {
+                    text-align: center;
+                    background-color: #4866B0;
+                  }
+
+
+
+                  .carousel-control.left,
+                  .carousel-control.right { background: none }
+
+
+
+
+                  @font-face {
+              font-family: 'Signika';
+              font-weight: 400;
+              font-style: normal;
+              src: url('http://fonts.gstatic.com/s/signika/v6/VXdqIs7WDCt-XY_CZ2hksw.eot');
+              src: url('http://fonts.gstatic.com/s/signika/v6/VXdqIs7WDCt-XY_CZ2hksw.eot?#iefix') format('embedded-opentype'),
+                   local('Signika'),
+                   local('Signika-regular'),
+                   url('http://fonts.gstatic.com/s/signika/v6/DgXTNsU4VcVVFTc7jwBZzwLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
+                   url('http://fonts.gstatic.com/s/signika/v6/T4xaKLLiHAltM2Q6-RoODgLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
+                   url('http://fonts.gstatic.com/s/signika/v6/ejLRhBEorqjLDaF8s-xuTQ.ttf') format('truetype'),
+                   url('http://fonts.gstatic.com/l/font?kit=5tVTlpEL90Fq0tycczbnOQ#Signika') format('svg');
+            }
+
+            @font-face {
+              font-family: 'Signika';
+              font-weight: 300;
+              font-style: normal;
+              src: url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbVQlYEbsez9cZjKsNMjLOwM.eot');
+              src: url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbVQlYEbsez9cZjKsNMjLOwM.eot?#iefix') format('embedded-opentype'),
+                   local('Signika-Light'),
+                   local('Signika-300'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbQzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbb3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbS3USBnSvpkopQaUR-2r7iU.ttf') format('truetype'),
+                   url('http://fonts.gstatic.com/l/font?kit=koFYE26bhT88HgRA8f4vbaWUboTb-jS2tyCOQMtm97g#Signika') format('svg');
+
+                 }
+
+
+                  .navbar-inner {
+                    background-color: transparent;
+                    border:0px;
+                  }
+
+                  .content {
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                  }
+
+                  .foot1 {
+                    font-family: "Roboto";
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #333333;
+                  }
+                  .foot2 {
+                    font-family: "Roboto";
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #333333;
+                  }
+                  .foot3 {
+                    font-family: "Roboto";
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #333333;
+                  }
+                       /* =------------------------------ ADDED  ---------------------- */
+          .header_2 .small_icon_login {
+		float: left;
+		padding-top: 10px;
+		padding-right: 11px;
+		border-right: 1px solid #ddd;
+		padding-left: 11px;
+		padding-bottom: 10px;
+	  }
+	  .header_2 .top_nav .small_icon_login {
+		text-shadow: none;
+		color: #777;
+	  }
+     .fullwidth_slider header#header .shadow{display:block}
+
+      /* =------------------------------ ADDED  ---------------------- */
+
+
+            </style>
+
+    <title>{{ club.name }}</title>
+</head>
+
+
+{% include 'editor/editheader.html' %}
+<!-- Header ends here -->
+<br><br><br><br><br>
+<!-- Header ends here -->
+
+<div class="container">
+
+
+
+
+        {% if msg %}
+            <p style="  font-size: 20px;
+           color:red;
+           font-family: "Signika";">
+           {{ msg }}
+           </p>
+        {% endif %}
+       <div id="clubname">
+
+           <p style="  font-size: 35px;
+           color:#4866B0;
+           font-family: "Signika";
+           font-weight: 300;
+           font-style: normal;">
+           {{ club.name }}
+           </p>
+
+       </div>   <!-- clubname ends here-->
+        <br><br>
+        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-md-8">
+                <!--carousel starts here-->
+
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                  <!-- Carousel indicators -->
+
+                  <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for carousel items -->
+
+                  <div class="carousel-inner">
+                      <div class="item active">
+                          <img src="http://localhost:8000/media/{{ club.car_pic1 }}" style="width:2000px" alt="First Slide">
+                       </div>
+                      <div class="item">
+                          <img src="http://localhost:8000/media/{{ club.car_pic2 }}" style="width:2000px" alt="Second Slide">
+                      </div>
+                      <div class="item">
+
+                          <img src="http://localhost:8000/media/{{ club.car_pic3 }}" style="width:2000px" alt="Third Slide">
+                     </div>
+                  </div>
+                  <!-- Carousel controls -->
+
+                  <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+              </div>
+
+                  {{ form.car_pic1 }} {{ form.car_pic2 }} {{ form.car_pic3 }}
+
+          </div>
+
+
+             <div class="col-md-4">
+
+                <div class="info" style="border: 1px solid #4866B0;">
+                  <ul class="nav nav-tabs">
+                    <li style="color:gray;font-size:20px;font-family:Roboto;font-weight:lighter;margin-left:30px;padding:10px;">Secretary</li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="row">
+                    <div class="col-md-6">
+                    <img class="img-responsive" style="padding:10px;" src="http://localhost:8000/media/{{ club.secy_pic }}">
+                    {{ form.secy_pic }}
+                    </div>
+                    <div class="col-md-6">
+                      {{ form.secy_details }}
+                    {{ form.secy_details.errors }}
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="info" style="border:1px solid #4866B0;">
+                  <h3 style="font-family:Roboto; color:#4866B0; text-align:center;">Upcoming Events</h3><br>
+                  {{ form.up_events }}
+                    {{ form.up_events.errors }}
+
+                </div>
+
+          </div>
+        </div>
+
+
+            <!--main body starts here-->
+
+          <div class="container">
+              <br>
+                <h2 style="font-family:Roboto; color:#4866B0; text-align:center;">About Us</h2><br>
+                 {{ form.about_us }}
+              {{ form.about_us.errors }}
+        <div class="row">
+        <div class="col-md-8">
+                <br>
+               <h2 style="font-family:Roboto; color:#4866B0;">Past Events</h2><br>
+               {{ form.past_events }}
+              {{ form.past_events.errors }}
+
+               <br> <h2 style="font-family:Roboto; color:#4866B0;">Achievements</h2><br>
+               {{ form.achievements }}
+              {{ form.achievements.errors }}
+
+               <br><h2 style="font-family:Roboto; color:#4866B0;">Future Projects and Aims</h2><br>
+
+                    {{ form.projects }}
+                     {{ form.projects.errors }}
+
+            <br><h2 style="font-family:Roboto; color:#4866B0;">Extra details here</h2><br>
+               {{ form.extra }}
+              {{ form.extra.errors }}
+
+            </div>
+            <br><br>
+            <div class="col-md-4">
+                <div class="info" style="border: 1px solid #4866B0;">
+
+                      <ul class="nav nav-tabs">
+
+                        <li style="font-size:20px;font-family:Roboto;font-weight:lighter;margin-left:30px;padding:10px;color:gray;">Useful Links</li>
+                      </ul>
+                      <div class="tab-content">
+                        {{ form.links }}
+                     {{ form.links.errors }}
+                      </div>
+                      </div>
+                    </div>
+
+
+
+            </div>
+              <br><br><br><br>
+                <h2 style="font-family:Roboto; color:#4866B0;" >Contact the Club</h2><br>
+
+                    {{ form.contact }}
+                     {{ form.contact.errors }}
+
+
+        </div>
+    </div>
+    </div>
+    <br><br>
+
+
+
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-5 col-sm-10">
+            <button type="submit" class="btn btn-success">Save changes</button>
+        </div>
+    </div>
+<br><br>
+</form>
+</div>
+
+	<!--footer begins here-->
+
+
+ <footer class="footer" style="background-color:#f3f0f0; border-top:1px">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-11" style="text-align:center;">
+
+
+            <p class="foot2" >
+                <br>
+                &copy;Students' Gymkhana Council, IIT Guwahati<br><br>
+
+            </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+
+<!---- ADDED --------------------->
+<script type='text/javascript' src='{% static 'editor/js/jquery.appear-1.1.1.modified.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/modernizr.custom.66803.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/animations.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.countdown.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/waypoints.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.easing.1.1.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.easing.1.3.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.mobilemenu.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/isotope.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.cycle.all.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/customSelect.jquery.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.carouFredSel-6.1.0-packed.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/tooltip.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.imagesloaded.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/main.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.placeholder.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.livequery.js' %}'></script>
+
+
+
+
+<!---- ADDED --------------------->
+
+</body>
+
+
+
+
+</html>

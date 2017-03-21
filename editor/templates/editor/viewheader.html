@@ -1,0 +1,115 @@
+{% load staticfiles %}
+<body class="home blog header_2 fullwidth_slider">
+
+<div class="top_nav">
+         <div class="container">
+            <div class="row-fluid">
+               <div class="span6">
+                  <div class="pull-left">
+                     <div id="widget_topnav-2" class="widget widget_topnav">
+
+                        <div class="login small_icon_login">
+                           <a href="{% url 'editor:Login' %}" target="_blank" data-box="login">Login</a>
+                        </div>
+                     </div>
+                     <div id="text-5" class="widget widget_text">
+                        <div class="textwidget">Contact us:   Phone: +91-361-258-2163/65/70</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="span6">
+                  <div class="pull-right">
+                     <div id="social_widget-2" class="widget social_widget">
+                        <div class="row-fluid social_row">
+                           <div class="span12">
+                              <ul class="footer_social_icons">
+                                 <li class="facebook"><a href="https://www.facebook.com/iitgwt/" target="_blank"><span></span></a></li>
+                                 <li class="google-plus"><a href="https://plus.google.com/+iitguwahati" target="_blank"><span></span></a></li>
+                                 <li class="twitter"><a href="http://www.twitter.com/_iitg" target="_blank"><span></span></a></li>
+                                 <li class="youtube"><a href="https://www.youtube.com/watch?v=OZJGh1vjP3I" target="_blank"><span></span></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+      <!-- Header -->
+      <div id="page-bg"></div>
+      <header id="header" class="header_2">
+         <div class="container">
+            <div class="row-fluid">
+               <div class="span12">
+                  <!-- Logo -->
+                  <div id="logo" class="">
+                     <a href='#'><img alt="img" src={% static 'editor/images/logo_sa.png' %} /></a>
+					 <span class="logo_desc"></span>
+                  </div>
+                  <!-- #logo -->
+                  <div id="navigation" class="nav_top pull-right">
+                     <!-- Menu Section -->
+                     <nav>
+                        <ul id="menu-menu" class="menu">
+                           <li class="current-menu-item current_page_item ">
+                              <a  href="{% url 'editor:viewIndex' %}">Home</a>
+                           </li>
+                           <li>
+                              <a href="{% url 'editor:viewBoard' 'Technical Board' %}" >Technical</a>
+                              <ul class="sub-menu" style="width:260px">
+                                 <li><a href="{% url 'editor:viewClub' 'Coding Club' %}" target="_blank">Coding Club</a></li>
+                                 <li><a href="{% url 'editor:viewClub' 'Electronics Club' %}" target="_blank">Electronics Club</a></li>
+                              </ul>
+                           </li>
+						  <li>
+                              <a href="{% url 'editor:viewBoard' 'Cultural Board' %}" >Cultural</a>
+                              <ul class="sub-menu" style="width:260px">
+                                 <li><a href="{% url 'editor:viewClub' 'Coding Club' %}" target="_blank">Coding Club</a></li>
+                                 <li><a href="{% url 'editor:viewClub' 'Electronics Club' %}" target="_blank">Electronics Club</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="{% url 'editor:viewBoard' 'Sports Board' %}" >Sports</a>
+                              <ul class="sub-menu" style="width:260px">
+                                 <li><a href="{% url 'editor:viewClub' 'Coding Club' %}" target="_blank">Coding Club</a></li>
+                                 <li><a href="{% url 'editor:viewClub' 'Electronics Club' %}" target="_blank">Electronics Club</a></li>
+                              </ul>
+                           </li>
+
+                             <li>
+                              <a href="{% url 'editor:viewBoard' 'Welfare Board' %}" >Welfare</a>
+                              <ul class="sub-menu" style="width:260px">
+                                 <li><a href="{% url 'editor:viewClub' 'Coding Club' %}" target="_blank">Coding Club</a></li>
+                                 <li><a href="{% url 'editor:viewClub' 'Electronics Club' %}" target="_blank">Electronics Club</a></li>
+                              </ul>
+                           </li>
+
+						   <li>
+                              <a href="{% url 'editor:viewBoard' 'Hostel Affairs Board' %}">Hostels</a>
+                              <ul class="sub-menu">
+                                 <li><a href="http://intranet.iitg.ernet.in/hostels/barak/" target="_blank">Barak</a></li>
+                                 <li><a href="http://intranet.iitg.ernet.in/hostels/brahmaputra/" target="_blank">Brahmaputra</a></li>
+                                 <li><a href="http://intranet.iitg.ernet.in/hostels/dibang/" target="_blank">Dibang</a></li>
+                                 <li><a href="http://intranet.iitg.ernet.in/hostels/dihing/" target="_blank">Dihing</a></li>
+                                 <li><a href="http://intranet.iitg.ernet.in/hostels/dhansiri/" target="_blank">Dhansiri</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/kameng/" target="_blank">Kameng</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/kapili/" target="_blank">kapili</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/lohit/" target="_blank">Lohit</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/manas/" target="_blank">Manas</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/msh/" target="_blank">Married Scholars'</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/siang/" target="_blank">Siang</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/subansiri/" target="_blank">Subansiri</a></li>
+								 <li><a href="http://intranet.iitg.ernet.in/hostels/umiam/" target="_blank">Umiam</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <!-- End Menu #navigation -->
+               </div>
+            </div>
+         </div>
+         <span class="shadow"></span>
+      </header>
+<!-- Header ends here -->

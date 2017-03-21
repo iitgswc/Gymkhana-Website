@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'editor/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'editor/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'editor/bootstrap-responsive.css' %}">
+
+    <!-- =------------------------------ ADDED  ---------------------- -->
+    <link rel='stylesheet' id='layerslider_css-css'  href='{% static 'editor/plugins/LayerSlider/css/layerslider.css' %}' media='all' />
+
+
+    <link rel='stylesheet' id='hoverex-css'  href='{% static 'editor/vector-icons.css' %}' media='all' />
+
+
+
+      <link href='{% static 'editor/css/style.css' %}' rel='stylesheet' type='text/css' />
+
+<script src="{% static 'editor/jquery.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!-- =------------------------------ ADDED  ---------------------- -->
+
+
+
+                <style type="text/css">
+
+                  .headings{
+                  font-family: Signika ;
+                  color: #00C2B5;
+                  font-size: 35px;
+                  font-weight: 300;
+
+                 }
+
+
+                  .nav-pills li a {
+                  font-family: Roboto;
+                  color: #494949;
+                  font-size: 14.5px;
+                  font-weight: 300;
+                  transform: scale(0.998,1.037);
+                   -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                  }
+
+
+
+                  .nav-pills > li.active > a,
+                  .nav-pills > li.active > a:hover,
+                  .nav-pills > li.active > a:focus {
+                    color:white;
+                    background-color:#4866B0;
+                  }
+                  .nav-tabs {
+                    text-align: center;
+                    background-color: #4866B0;
+                  }
+
+
+
+                  .carousel-control.left,
+                  .carousel-control.right { background: none }
+
+
+
+
+                  @font-face {
+              font-family: 'Signika';
+              font-weight: 400;
+              font-style: normal;
+              src: url('http://fonts.gstatic.com/s/signika/v6/VXdqIs7WDCt-XY_CZ2hksw.eot');
+              src: url('http://fonts.gstatic.com/s/signika/v6/VXdqIs7WDCt-XY_CZ2hksw.eot?#iefix') format('embedded-opentype'),
+                   local('Signika'),
+                   local('Signika-regular'),
+                   url('http://fonts.gstatic.com/s/signika/v6/DgXTNsU4VcVVFTc7jwBZzwLUuEpTyoUstqEm5AMlJo4.woff2') format('woff2'),
+                   url('http://fonts.gstatic.com/s/signika/v6/T4xaKLLiHAltM2Q6-RoODgLUuEpTyoUstqEm5AMlJo4.woff') format('woff'),
+                   url('http://fonts.gstatic.com/s/signika/v6/ejLRhBEorqjLDaF8s-xuTQ.ttf') format('truetype'),
+                   url('http://fonts.gstatic.com/l/font?kit=5tVTlpEL90Fq0tycczbnOQ#Signika') format('svg');
+            }
+
+            @font-face {
+              font-family: 'Signika';
+              font-weight: 300;
+              font-style: normal;
+              src: url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbVQlYEbsez9cZjKsNMjLOwM.eot');
+              src: url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbVQlYEbsez9cZjKsNMjLOwM.eot?#iefix') format('embedded-opentype'),
+                   local('Signika-Light'),
+                   local('Signika-300'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbQzyDMXhdD8sAj6OAJTFsBI.woff2') format('woff2'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbb3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff'),
+                   url('http://fonts.gstatic.com/s/signika/v6/koFYE26bhT88HgRA8f4vbS3USBnSvpkopQaUR-2r7iU.ttf') format('truetype'),
+                   url('http://fonts.gstatic.com/l/font?kit=koFYE26bhT88HgRA8f4vbaWUboTb-jS2tyCOQMtm97g#Signika') format('svg');
+
+                 }
+
+
+                  .navbar-inner {
+                    background-color: transparent;
+                    border:0px;
+                  }
+
+                  .content {
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                  }
+
+                  .foot1 {
+                    font-family: "Roboto";
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #333333;
+                  }
+                  .foot2 {
+                    font-family: "Roboto";
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #333333;
+                  }
+                  .foot3 {
+                    font-family: "Roboto";
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #333333;
+                  }
+             /* =------------------------------ ADDED  ---------------------- */
+          .header_2 .small_icon_login {
+		float: left;
+		padding-top: 10px;
+		padding-right: 11px;
+		border-right: 1px solid #ddd;
+		padding-left: 11px;
+		padding-bottom: 10px;
+	  }
+	  .header_2 .top_nav .small_icon_login {
+		text-shadow: none;
+		color: #777;
+	  }
+     .fullwidth_slider header#header .shadow{display:block}
+
+      /* =------------------------------ ADDED  ---------------------- */
+
+            </style>
+
+    <title>All Achievements</title>
+</head>
+
+
+
+{% include 'editor/viewheader.html' %}
+<!-- Header ends here -->
+
+<!--LAYERsLIDER -->
+
+<div class="top_wrapper">
+	  <div class="header_page">
+   <div class="container">
+      <div class="row-fluid">
+         <div class="span6">
+            <h4>All Achievements</h4>
+         </div>
+         <div class="breadcrumbss">
+            <ul class="page_parents pull-right">
+               <li>You are here: </li>
+               <li><a href="?p=home">Home</a>/</li>
+			   <li><a href="#">All Achievements</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+<section id="content">
+   <div class="container" id="page">
+      <div class="row">
+         <div class="span12">
+            <div class="themeple_sc">
+               <div class="border-table">
+                  <table class="table table-bordered">
+                     <tr class="th">
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>Posted On</td>
+						<td>Link</td>
+                     </tr>
+                    {% for achievement in listAchieve %}
+                     <tr>
+
+                        <td style="width:25%">{{ achievement.Title }}</td>
+                        <td style="width:55%">{{ achievement.Description }}</td>
+						<td style="width:10%">{{ achievement.Postdate }}</td>
+						<td style="width:10%"><a href="{{ achievement.Link }}" target="_blank" style="color:#009dcd">Read More</a></td>
+
+                     </tr>
+
+                      {% endfor %}
+
+
+                  </table>
+               </div>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+         </div>
+      </div>
+   </div>
+</section>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+ <footer class="footer" style="background-color:#f3f0f0; border-top:1px">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-11" style="text-align:center;">
+
+
+            <p class="foot2" >
+                <br>
+                &copy;Students' Gymkhana Council, IIT Guwahati<br><br>
+
+            </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+
+
+</body>
+
+<!---- ADDED --------------------->
+<script type='text/javascript' src='{% static 'editor/js/jquery.appear-1.1.1.modified.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/modernizr.custom.66803.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/animations.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.countdown.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/waypoints.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.easing.1.1.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.easing.1.3.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.mobilemenu.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/isotope.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.cycle.all.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/customSelect.jquery.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.carouFredSel-6.1.0-packed.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/tooltip.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.imagesloaded.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/main.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.placeholder.min.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/js/jquery.livequery.js' %}'></script>
+
+  <script type='text/javascript' src='{% static 'editor/plugins/LayerSlider/js/layerslider.kreaturamedia.jquery.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/plugins/LayerSlider/js/jquery-easing-1.3.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/plugins/LayerSlider/js/jquerytransit.js' %}'></script>
+  <script type='text/javascript' src='{% static 'editor/plugins/LayerSlider/js/layerslider.transitions.js' %}'></script>
+
+
+
+<!---- ADDED --------------------->
+
+
+
+</html>
